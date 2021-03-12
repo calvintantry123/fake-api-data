@@ -1,22 +1,76 @@
 {
   "users": [
-    { "id" : 1, "name" : "admin", "phoneNumber" : "081234567890", "password" : "admin123", "email" : "admin@gmail.com", "role" : "admin" },
-    { "id" : 2, "name" : "user", "phoneNumber" : "081234567890", "password" : "user123", "email" : "user@gmail.com", "role" : "user" },
-    { "id" : 3, "name" : "userb", "phoneNumber" : "081234567890", "password" : "user123", "email" : "user@gmail.com", "role" : "user" }
+    {
+        "id": 1,
+        "name": "fernandes",
+        "phoneNumber": "0857189953663",
+        "password": "123456789",
+        "email": "fernandes.sebastian@binus.ac.id",
+        "role": "admin"
+    },
+    {
+        "id": 2,
+        "name": "hendra",
+        "phoneNumber": "0857189953663",
+        "password": "123456789",
+        "email": "hendra.sebastian@binus.ac.id",
+        "role": "user"
+    }
   ],
   
   "room": [
-    { "id" : 1, "capacity" : 40 },
-    { "id" : 2, "capacity" : 40 }
+    {
+        "id": 1,
+        "name": "gading",
+        "capacity": 10,
+        "roomType": "meeting room"
+    },
+    {
+        "id": 2,
+        "name": "flamboyan",
+        "capacity": 5,
+        "roomType": "meeting room"
+    }
   ],
   
   "booking" : [
-    {"id" : 1, "roomId" : 1, "startTime": 15.00, "endTime": 17.00},
-    {"id" : 2, "roomId" : 2, "startTime": 11.00, "endTime": 13.00}
+    {
+        "id": 2,
+        "userId": 2,
+        "roomId": 1,
+        "checkIn": "2020-03-15 07:00:00.000",
+        "checkOut": "2020-03-15 10:00:00.000",
+        "status": "not yet approved"
+    },
+    {
+        "id": 1,
+        "userId": 2,
+        "roomId": 1,
+        "checkIn": "2020-03-15 07:00:00.000",
+        "checkOut": "2020-03-15 10:00:00.000",
+        "status": "cancel"
+    }
   ],
   
   "bookingDetail" : [
     { "id" : 1, "bookingId": 1},
     { "id" : 2, "bookingId": 2}
+  ]
+  
+  "History" : [
+    {
+        "checkIn": "2020-03-15T07:00:00.000+00:00",
+        "checkOut": "2020-03-15T10:00:00.000+00:00",
+        "status": "not yet approved",
+        "userName": "hendra",
+        "roomName": "flamboyan"
+    },
+    {
+        "checkIn": "2020-03-15T07:00:00.000+00:00",
+        "checkOut": "2020-03-15T10:00:00.000+00:00",
+        "status": "cancel",
+        "userName": "fernandes",
+        "roomName": "gading"
+    }
   ]
 }
