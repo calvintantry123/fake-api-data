@@ -55,7 +55,7 @@
   "bookingDetail" : [
     { "id" : 1, "bookingId": 1},
     { "id" : 2, "bookingId": 2}
-  ]
+  ],
   
   "History" : [
     {
